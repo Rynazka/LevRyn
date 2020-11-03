@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Penjualan</title>
+	<style type="text/css">
+	body {
+		width: 100%;
+	}
+	table{
+		width: 50%;
+	}
+	td {width: 25%;
+		
+	}
+	.tanggal {
+		text-align: center;
+	}
+	.logo {
+		width: 40px;
+		height: 30px;
+	}
+	.banner {
+		width: 100%;
+		height: 5%;
+	}
+	#judul_besar {
+		font-size: 30px;
+		font-style: bold;
+	}
+	.paper {
+		background-color: rgb(246, 247, 212);
+	}
+	.one {
+		background-color: rgb(210, 246, 197);
+	}
+	.two {
+		background-color: rgb(153, 243, 189);
+	}
+	.three {
+		background-color: rgb(40, 223, 153);
+	}
+	</style>
+</head>
+	
+<body>
+
+
+<fieldset class="paper">	
+	<legend id="judul_besar"><img src="smp.png" class="logo">Student Registration Form</legend>
+	<img src="Form.jpg" class="banner">
+	<form>
+	<!--KOLOM PERTAMA-->
+	<fieldset class="one">
+	<legend><h4>Datadiri</h4></legend>
+		<label for="fname">
+			<table>
+			<div >
+			<td>First Name :</td> 
+			<td><input type="text" name="fname" placeholder="First Name"></td>
+			</div>
+			</table>
+		</label><br>
+		<label for="lname">
+			<table>
+			<div >
+			<td>Last Name :</td> 
+			<td><input type="text" name="lname" placeholder="Last Name"></td>
+			</div>
+			</table>
+		</label><br>
+		<label for="ttl">
+			<table>
+				<div >
+			<td>Tempat,Tanggal Lahir :</td> 
+			<td><input type="text" name="ttl" placeholder="Tempat,Tanggal Lahir"></td>
+			</div>
+			</table>
+		</label><br>
+		<table>
+			<div >
+		<td>Gender :</td> 
+		<td><select name="gender">
+			<option value="">--Gender--</option>
+			<option value="Pria">Pria</option>
+			<option value="Wanita">Wanita</option>
+			<option value="notsay">Tidak Ingin Menyebutkan</option></td>
+		</select>
+		</div>
+		</table><br>
+		<label for="hobby">
+			<table>
+				<div >
+			<td>Hobi :</td>
+			<td>  
+			<input type="checkbox" name="Coding">Coding
+			<input type="checkbox" name="Programming">Programming	
+			<input type="checkbox" name="Design">Desain
+			<input type="checkbox" name="Lainnya">
+			<input type="text" name="lainnya" placeholder="Lainnya..."></td>
+			</div>
+			</table>
+		</label><br>
+		<label for="kampus">
+			<table>
+			<td>Universitas:</td>
+			<td><input type="text" name="kampus" value="STT Terpadu Nurul Fikri" readonly></td>
+			</table>
+		</label>
+	</fieldset>
+	<!--KOLOM KEDUA-->
+	<fieldset class="two">
+		<legend><h4>Contact Information</h4></legend>
+		<label for="alamat">
+			<table>
+			<div >
+			<td>Alamat :</td>
+			<td><input type="text" name="alamat" placeholder="Alamat Lengkap" size="60"></td>
+			</div>
+			</table><br>
+			<table>
+			<div >
+			<td>Kota :</td>
+			<td><input type="text" name="kota" placeholder="Kota Asal" size="10"></td>
+
+			
+			<td>Email :</td>
+			<td><input type="text" name="email" placeholder="Email" size="15"></td>
+			</div>
+			</table><br>
+			<table>
+			<div >
+			<td>Provinsi :</td> 
+			<td><input type="text" name="provinsi" placeholder="Provinsi" size="10"></td>
+			<td>Kode Pos :</td> 
+			<td><input type="number" name="kodepos" placeholder="Kode Pos" size="10"></td>
+			</div>
+			</table><br>
+			<table>
+			<div >
+			<td>No HP :</td> 
+			<td><input type="number" name="nomor telpon" placeholder="contoh : 081234567890"></td>
+			<td>No Whatsapp :</td> 
+			<td><input type="number" name="instagram" placeholder="contoh : 081234567890"></td>
+			</div>
+			</table>
+		</label>
+	</fieldset>
+		<br>
+		<!--KOLOM KETIGA-->
+		<fieldset class="three">
+		<legend><h4>Tanda Tangan</h4></legend>
+		<input type="radio" name="lisence">dengan ini, saya telah setuju dengan peraturan sekolah ini.<br>
+		<table>
+		<td class="center" rowspan="2">Tanggal Pengisian
+		<input type="date" name="tanggal"></td>
+		</table>
+		<table>
+		<label for="signature" class="center">
+		<td><textarea placeholder="Tanda Tangan Siswa"></textarea>
+		<textarea placeholder="Pemeriksa"></textarea></td>
+		
+		</table>
+		</label>
+		</fieldset>
+	</form>
+</fieldset>
+
+</body>
+</html>

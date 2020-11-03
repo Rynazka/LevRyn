@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daftar</title>
+        <style media="screen">
+            body {
+                width: 100%;
+                background-color: rgb(230, 213, 184);
+                font-family: verdana;
+            }
+            .logo {
+                width: 80px;
+                height: 90px;
+            }
+            .title {   
+                width: 10%;
+            }
+            .navigasi {
+                width: 50%;
+                margin: -80px 0 0 40%;
+                text-align: right;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(28, 43, 45);
+                font-family: verdana;
+            }
+            .promotion {
+                width: 50%;
+                height: 1%;
+
+            }
+            .product {
+                width: 100%;
+                height: 20%;
+            }
+            #judul_besar {
+                font-size: 30px;
+                font-style: bold;
+            }
+            table{
+                width: 50%;
+            }
+            td {
+                width: 25%;
+        
+            }
+            .colorfield {
+                background-color: #F5F5F5;
+            }
+            .paper {
+                background-color: white;
+            }
+            /**CSS LOGIN BOX**/
+            .box {
+                background-color: rgba(230,230,230,0.5);
+            }
+            .kotak:before {
+                content: '';
+                 background-color: rgba(0, 0, 0, 0.8);
+                 position: fixed;
+                 top: 0;
+                 left: 0;
+                 width: 100%; height: 100%;
+                 display: none;
+            }
+
+            .kotak:target:before {
+                display: block;
+             }    
+
+            .in-kotak {
+                position: fixed;
+                left: 50%;
+                width: 300px;
+                height: 200px;
+                margin-left: -150px;
+          
+                background-color: rgb(224, 123, 57);
+                padding: 10px;
+                transform: translateY(-300%);
+                transition:transform 0.5s ease;
+                }
+            .kotak:target .in-kotak {
+                transform: translateY(0%);
+            }
+            .loginbox {
+                border: 2px solid grey;
+                font-weight: bold;
+            }
+            
+        </style>
+        <body>
+            <div class="title">
+                <table>
+                    <tr>
+                        <td><img class="logo" src="https://cdn.pixabay.com/photo/2016/12/20/05/36/store-1919731_960_720.png"></td>
+                        <td><h2 style="margin: -10px 0 0 0;">Rynazka Shop</h2></td>
+                    </tr>
+                </table>
+            </div>
+          <div class="kotak" id="login">
+                <div class="in-kotak">
+                    <fieldset>
+                        <legend class="loginbox">Silahkan login disini</legend>
+                        Username : <br>
+                        <input type="text" name="name" value="" placeholder="input your Username here"><br>
+                        Password : <br>
+                        <input type="text" name="name" value="" placeholder="input your Password here"><br>
+                        <button><a href="landing_page.html">Login</a></button>
+                        <button><a href="#x">Tutup</a></button><br><br>
+                    </fieldset>
+                </div>
+            </div>
+            <div>
+                <table class="navigasi">
+                    <tr>
+                        <td><h4><a href="landing_page.html">Beranda</a></h4></td>
+                        <td><h4><a href="#login">Login</a></h4></td>
+                        <td><h4><a href="help.html">Daftar</a></h4></td>
+                    </tr>
+                </table>
+<fieldset class="paper">    
+    <legend id="judul_besar">Registration Form</legend>
+    <form>
+    <!--KOLOM PERTAMA-->
+    <fieldset class="colorfield">
+    <legend><h4>Datadiri</h4></legend>
+        <label for="fname">
+            <table>
+            <div >
+            <td>First Name :</td> 
+            <td><input type="text" name="fname" placeholder="First Name"></td>
+            </div>
+            </table>
+        </label><br>
+        <label for="lname">
+            <table>
+            <div >
+            <td>Last Name :</td> 
+            <td><input type="text" name="lname" placeholder="Last Name"></td>
+            </div>
+            </table>
+        </label><br>
+        <label for="ttl">
+            <table>
+                <div >
+            <td>Tempat,Tanggal Lahir :</td> 
+            <td><input type="text" name="ttl" placeholder="Tempat,Tanggal Lahir"></td>
+            </div>
+            </table>
+        </label><br>
+        <table>
+            <div >
+        <td>Gender :</td> 
+        <td><select name="gender">
+            <option value="">--Gender--</option>
+            <option value="Pria">Pria</option>
+            <option value="Wanita">Wanita</option>
+            <option value="notsay">Tidak Ingin Menyebutkan</option></td>
+        </select>
+        </div>
+        </table><br>
+        <label for="hobby">
+            <table>
+                <div >
+            <td>Hobi :</td>
+            <td>  
+            <input type="checkbox" name="Coding">Coding
+            <input type="checkbox" name="Programming">Programming   
+            <input type="checkbox" name="Design">Desain
+            <input type="checkbox" name="Lainnya">
+            <input type="text" name="lainnya" placeholder="Lainnya..."></td>
+            </div>
+            </table>
+        </label><br>
+        <label for="kampus">
+            <table>
+            <td>Universitas:</td>
+            <td><input type="text" name="kampus" value="STT Terpadu Nurul Fikri" readonly></td>
+            </table>
+        </label>
+    </fieldset>
+    <!--KOLOM KEDUA-->
+    <fieldset class="colorfield">
+        <legend><h4>Contact Information</h4></legend>
+        <label for="alamat">
+            <table>
+            <div >
+            <td>Alamat :</td>
+            <td><input type="text" name="alamat" placeholder="Alamat Lengkap" size="60"></td>
+            </div>
+            </table><br>
+            <table>
+            <div >
+            <td>Kota :</td>
+            <td><input type="text" name="kota" placeholder="Kota Asal" size="10"></td>
+
+            
+            <td>Email :</td>
+            <td><input type="text" name="email" placeholder="Email" size="15"></td>
+            </div>
+            </table><br>
+            <table>
+            <div >
+            <td>Provinsi :</td> 
+            <td><input type="text" name="provinsi" placeholder="Provinsi" size="10"></td>
+            <td>Kode Pos :</td> 
+            <td><input type="number" name="kodepos" placeholder="Kode Pos" size="10"></td>
+            </div>
+            </table><br>
+            <table>
+            <div >
+            <td>No HP :</td> 
+            <td><input type="number" name="nomor telpon" placeholder="contoh : 081234567890"></td>
+            <td>No Whatsapp :</td> 
+            <td><input type="number" name="instagram" placeholder="contoh : 081234567890"></td>
+            </div>
+            </table>
+        </label>
+    </fieldset>
+        <br>
+        <!--KOLOM KETIGA-->
+        <fieldset class="colorfield">
+        <legend><h4>Tanda Tangan</h4></legend>
+        <input type="radio" name="lisence">dengan ini, saya telah setuju dengan peraturan e-commerce ini<br>
+        <table>
+        <td class="center" rowspan="2">Tanggal Pengisian
+        <input type="date" name="tanggal"></td>
+        </table>
+        <table>
+        <label for="signature" class="center">
+        <td><textarea placeholder="Tanda Tangan Siswa"></textarea>
+        <textarea placeholder="Pemeriksa"></textarea></td>
+        
+        </table>
+        </label>
+        </fieldset>
+    </form>
+</fieldset>
+
+</body>
+    </head>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <style>
+            body {
+                width: 100%;
+                background-color: rgb(230, 213, 184);
+                font-family: verdana;
+            }
+            .logo {
+                width: 80px;
+                height: 90px;
+            }
+            .title {   
+                width: 10%;
+            }
+            .navigasi {
+                width: 50%;
+                margin: -80px 0 0 40%;
+                text-align: right;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(28, 43, 45);
+                font-family: verdana;
+            }
+            .promotion {
+                width: 50%;
+                height: 1%;
+
+            }
+            .product {
+                width: 100%;
+                height: 20%;
+            }
+            .boxproduct {
+                background-color: rgba(230,230,230,0.5);
+                padding: 20px;
+            }
+            .imgproduct {
+                width: 20%;
+                height: 20%;
+            }
+            .promotion {
+                float: right;
+            }
+            /**CSS LOGIN BOX**/
+            .box {
+                background-color: rgba(230,230,230,0.5);
+            }
+            .kotak:before {
+                content: '';
+                 background-color: rgba(0, 0, 0, 0.8);
+                 position: fixed;
+                 top: 0;
+                 left: 0;
+                 width: 100%; height: 100%;
+                 display: none;
+            }
+
+            .kotak:target:before {
+                display: block;
+             }    
+
+            .in-kotak {
+                position: fixed;
+                left: 50%;
+                width: 300px;
+                height: 200px;
+                margin-left: -150px;
+          
+                background-color: rgb(224, 123, 57);
+                padding: 10px;
+                transform: translateY(-300%);
+                transition:transform 0.5s ease;
+                }
+            .kotak:target .in-kotak {
+                transform: translateY(0%);
+            }
+            .loginbox {
+                border: 2px solid grey;
+                font-weight: bold;
+            }
+            
+        </style>
+        <body>
+            <div class="title">
+                <table>
+                    <tr>
+                        <td><img class="logo" src="https://cdn.pixabay.com/photo/2016/12/20/05/36/store-1919731_960_720.png"></td>
+                        <td><h2 style="margin: -10px 0 0 0;">Rynazka Shop</h2></td>
+                    </tr>
+                </table>
+            </div>
+           <div class="kotak" id="login">
+                <div class="in-kotak">
+                    <fieldset>
+                        <legend class="loginbox">Silahkan login disini</legend>
+                        Username : <br>
+                        <input type="text" name="name" value="" placeholder="input your Username here"><br>
+                        Password : <br>
+                        <input type="text" name="name" value="" placeholder="input your Password here"><br>
+                        <button><a href="landing_page.html">Login</a></button>
+                        <button><a href="#x">Tutup</a></button><br><br>
+                    </fieldset>
+                </div>
+            </div>
+            <div>
+                <table class="navigasi">
+                    <tr>
+                        <td><h4><a href="landing_page.html">Beranda</a></h4></td>
+                        <td><h4><a href="#login">Login</a></h4></td>
+                        <td><h4><a href="help.html">Daftar</a></h4></td>
+                    </tr>
+                </table>
+            </div><br><br>
+            <div>
+                    <a href="discounts.html"><img src="asade.jpg" class="promotion"></a>
+                    <center>
+                        <h4>The discounts was expired, Come again on our next discounts promo <3</h4><br>
+                        <h2>Other Products</h2>
+                    </center>
+            </div>
+            
+            <div class="product">
+                <div class="boxproduct">
+                    <div>
+                        <center>
+                         <a href="products.html"><img src="https://i.insider.com/5d0bd4b7e3ecba5d97628a02?width=1100&format=jpeg&auto=webp" class="imgproduct"></a>
+                        </center>
+                    </div>
+                </div>
+            </div>   
+        </body>
+    </head>
