@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Js</title>
+</head>
+
+<body id="start">
+	
+	<center>
+		<h4>Login</h4>
+		<form name="form" method="REQUEST">
+
+    		<input type="text" name="name" placeholder="Username" id="username"><br>
+	   		<input type="text" name="password" placeholder="Password" id="password"><br>
+    		<button type="submit" onclick="return login();">Submit</button>
+    	
+
+		</form>
+	</center>
+</body>
+	<script type="text/javascript">
+		alert("Silahkan Login dengan username azka dan password mahasiswa")
+		function login() {
+			username = document.getElementById("username").value;
+			password = document.getElementById("password").value;
+
+			if (username == "" || password == ""){
+				alert('Isi Username dan Password sesuai ketentuan.');
+				return false;
+			}
+			else if (username == "azka" && password == "mahasiswa"){
+				window.location = "menu.html";
+				return false;
+			}
+			else {
+				alert("Username atau password salah.");
+			}
+		}
+	</script>
+</html>		
+
+
+

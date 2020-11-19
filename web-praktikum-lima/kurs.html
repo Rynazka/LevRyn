@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kurs</title>
+	<style type="text/css">
+		body {
+			width: 100%;
+
+		}
+		table {
+			width: 50%;
+		}
+		th {
+			width: 10%;
+			text-align: center;
+			border: 1px solid black;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		fieldset {
+			width: 50%
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<fieldset>
+			<legend>
+				Dashboard
+			</legend>
+			<table>
+				<th><a href="login.html">Login</a></th>
+				<th><a href="chat.html">Chat</a></th>
+				<th><a href="kurs.html">Kurs</a></th>
+				<th><a href="imgpicker.html">ImagePicker</a></th>
+				<th><a href="valid.html">Validation</a></th>
+			</table>
+		</fieldset>
+		<h2>Kurs</h2>
+		<table>
+			<tr>
+				<th>Nilai Mata Asing</th>
+				<th>Nilai</th>
+				<th>Rupiah</th>
+			</tr>		
+		<tr>
+			<td><input type="text" name="mata asing" onkeyup="asing()" id="jml" placeholder="Masukkan Nilai Mata Asing"></td>
+			<td>
+				<select onchange="asing()" id="kurs">
+					<option value="0">Silahkan pilih Mata uang asing</option>
+					<option value="1">$ Dollar America</option>
+					<option value="2">S$ Dollar Singapore</option>
+					<option value="3">RM Ringgit Malaysia</option>
+					<option value="4">¥ Japanese Yen</option>
+					<option value="5">€ European Euro</option>
+					<option value="6">SR Riyal Saudi Arabia</option>
+				</select>
+			</td>
+			<td><input type="text" disabled="" id="total" name="rupiah" placeholder="Nilai Rupiah"></td>
+		</tr>
+		</table>
+		
+	</center>
+	
+</body>
+<script type="text/javascript">
+		function asing() {
+			
+			let v = document.getElementById("kurs").value;
+
+			
+			if (v == 1) {
+				input = document.getElementById("jml").value;
+				rp = 9915;
+				hasil = rp * input;
+				document.getElementById("total").value = hasil;
+			}else if (v == 2) {
+				input = document.getElementById("jml").value;
+				rp = 13472;
+				hasil = rp * input;
+				document.getElementById("total").value = hasil;
+			}else if (v == 3) {
+				input = document.getElementById("jml").value;
+				rp = 874;
+				hasil = rp * input;
+				document.getElementById("total").value = hasil;
+			}else if (v == 4) {
+				input = document.getElementById("jml").value;
+				rp = 120;
+				hasil = rp * input;
+				document.getElementById("total").value = hasil;
+			}else if (v == 5) {
+				input = document.getElementById("jml").value;
+				rp = 15888;
+				hasil = rp * input;
+				document.getElementById("total").value = hasil;
+			}else if (v == 6) {
+				input = document.getElementById("jml").value;
+				rp = 3592;
+				hasil = rp * input;
+				document.getElementById("total").value = hasil;
+			}
+
+
+		}
+	</script>
+</html>
