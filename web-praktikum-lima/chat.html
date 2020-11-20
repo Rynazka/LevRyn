@@ -25,12 +25,27 @@
 			width: 50%
 		}
 		.isi {
-			background-color: rgba(225,225,225,0.5);
-			width: 50%;
-			height: 50%;
+			
+			width: auto;
+			height: 500px;
 			border: 1px solid black;
+			
 			}
-		.form {margin-left: 50px;
+		#isi {
+			background-image: url('https://s3-eu-west-1.amazonaws.com/userlike-cdn-blog/benefits-of-live-chat/chat-benefits.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: auto;
+			opacity: 0.5;
+			color: black;
+		}
+		}
+		.form {
+			text-align: right;
+			
+		}
+		.tombol {
+			text-align: right;
 		}
 	</style>
 </head>
@@ -51,14 +66,20 @@
 		<h2>Chatbox</h2>
 
 	</center>
-	<div class="form">
-	<h4>Chat Box</h4>
-	<div id="isi" class="isi">
-	</div>
-	<form name="form" method="REQUEST" >
-	<input type="text" name="pesan" id="isipesan" placeholder="masukkan pesan disini" maxlength="20px">
-	<input type="submit" name="kirim" value="Kirim" id="kirim" onclick="return send()">
-	</form>
+	<div>
+		<div class="form">
+			<h4>Chat Box</h4>
+			<div id="isi" class="isi">
+				<center>
+					<h2>Chatbox</h2>
+				</center>
+			</div>
+			<form name="form" method="REQUEST" class="tombol" >
+			<input type="submit" name="kirim" value="Kirim" id="kirim" onclick="return send()">
+			<input type="text" name="pesan" id="isipesan" placeholder="masukkan pesan disini" maxlength="20px">
+			
+			</form>
+		</div>
 	</div>
 </body>
 <script type="text/javascript">
